@@ -3,6 +3,28 @@ import { GalleryItem, ItemImg } from './ImageGalleryItem.styled';
 import { Modal } from 'components/Modal/Modal';
 import { Component } from 'react';
 
+// export function ImageGalleryItem({ images }) {
+//   const [showModal, setshowModal] = useState(false);
+
+//   const toggleModal = largeImageURL => {
+//     setshowModal(showModal => ({
+//       showModal: !showModal,
+//     }));
+//     setshowModal({ largeImageURL });
+//   };
+
+//   const { webformatURL, tags, largeImageURL } = images;
+//   return (
+//     <GalleryItem>
+//       <ItemImg src={webformatURL} alt={tags} onClick={toggleModal} />
+//       {showModal && (
+//         <Modal onClose={toggleModal}>
+//           <img src={largeImageURL} alt={tags} />
+//         </Modal>
+//       )}
+//     </GalleryItem>
+//   );
+// }
 export class ImageGalleryItem extends Component {
   state = {
     showModal: false,
