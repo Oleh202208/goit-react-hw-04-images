@@ -24,32 +24,6 @@ export function ImageGalleryItem({ webformatURL, tags, largeImageURL }) {
     </GalleryItem>
   );
 }
-// export class ImageGalleryItem extends Component {
-//   state = {
-//     showModal: false,
-//   };
-
-//   toggleModal = largeImageURL => {
-//     this.setState(({ showModal }) => ({
-//       showModal: !showModal,
-//     }));
-//     this.setState({ largeImageURL: largeImageURL });
-//   };
-//   render() {
-//     const { showModal } = this.state;
-//     const { webformatURL, tags, largeImageURL } = this.props;
-//     return (
-//       <GalleryItem>
-//         <ItemImg src={webformatURL} alt={tags} onClick={this.toggleModal} />
-//         {showModal && (
-//           <Modal onClose={this.toggleModal}>
-//             <img src={largeImageURL} alt={tags} />
-//           </Modal>
-//         )}
-//       </GalleryItem>
-//     );
-//   }
-// }
 
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string.isRequired,
